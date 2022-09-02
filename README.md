@@ -109,11 +109,11 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 | ID  | Content                                                                                                                  |
 | --- | ------------------------------------------------------------------------------------------------------------------------ |
-| 28  | As a **user** I want to be able to easily register for an account so that I can have a personal account and be able to view my profile                                   |
-| 29  | As a **user** I want to be able to easily login or logout so that I can access my personal account information                                                           |
-| 30  | As a **user** I want to be able to easily recover my password in case i forgot it so that I can recover access to my account                                             |
-| 31  | As a **user** I want to be able to receive an email confirmation after registering so that I can verify that my account registration was successful                      |
-| 32  | As a **user** I want to be able to have a personalized user profile so that I can view my personal order history and order confirmations and save my payment information |
+| 28  | As a **user** I want to be able to **easily register for an account** so that I can **have a personal account and be able to view my profile**                                   |
+| 29  | As a **user** I want to be able to **easily login or logout** so that I can **access my personal account information**                                                           |
+| 30  | As a **user** I want to be able to **easily recover my password in case i forgot it** so that I can **recover access to my account**                                             |
+| 31  | As a **user** I want to be able to **receive an email confirmation after registering** so that I can **verify that my account registration was successful**                      |
+| 32  | As a **user** I want to be able to **have a personalized user profile** so that I can **view my personal order history and order confirmations and save my payment information** |
 
 # Scope
 
@@ -180,3 +180,37 @@ This website will offer all of these things whilst also allowing for intuitive n
 - Admin user can preform full CRUD functionalliy without having to enter the default 'admin panel' from django. 
 - Admin user can add products from a 'Product Management' link in the account menu from the navigation bar 
 - Admin user can edit/delete products from the products page and product details page
+
+
+## Future Features
+
+- Subscribe to gaming guides and tutorials
+
+
+# Structure
+
+## Sitemap
+
+
+## Wireframes
+
+All wireframes were created used [Balsamiq](https://balsamiq.com/)
+
+Wireframes are linked here:
+
+- [Homepage](assets/documents/readme_docs/301725581_5445706365465377_2612677724086160542_n.png)
+- [Product list page](assets/documents/readme_docs/300514560_588530342950907_6639597091498167681_n.png)
+- [Product details page](assets/documents/readme_docs/301692060_560646862515226_8829632733422704231_n.png)
+- [Shopping bag](assets/documents/readme_docs/286304102_2231528163671681_6884067683633208498_n.png)
+- [Checkout](assets/documents/readme_docs/300977215_605713857785279_1259445599883392670_n.png)
+- [Sign in](assets/documents/readme_docs/304799689_1000221404006645_6853603326264657597_n.png)
+
+## Database schema
+
+<p align="center">
+<img src="assets/documents/readme_docs/QuickDBD-export.png" width="1000" height="100%">
+</p>
+
+# Business Model
+
+This is an e-commerce store with a B2C (Business to Consumer) model, as the business is selling products, guides and tutorials directly to consumers
