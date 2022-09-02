@@ -63,47 +63,47 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 | ID  | Content                                                                                                                                                   |
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | As a **store owner** I want to be able to log in so that I can have full access to the store                                                              |
-| 2   | As a **store owner** I want to be able to add new products so that I can add new items to my store                                                        |
-| 3   | As a **store owner** I want to be able to add new categories so that items is easy to find                                                                |
-| 4   | As a **store owner** I want to be able to add FAQ's to the site so that I can answer questions a user might have                                          |
-| 5   | As a **store owner** I want to be able to edit/update a product so that I can change product prices, descriptions, images and other product criteria      |
-| 6   | As a **store owner** I want to be able to edit/delete categories so that I can change category names and keep the site up to date                         |
-| 7   | As a **store owner** I want to be able to edit/delete FAQ's so that I can change questions and answers                                                    |
+| 1   | As a **store owner** I want to be able to **log in** so that I can **have full access to the store**                                                              |
+| 2   | As a **store owner** I want to be able to **add new products** so that I can **add new items to my store**                                                        |
+| 3   | As a **store owner** I want to be able to **add new categories** so that I can **make items is easy to find**                                                                |
+| 4   | As a **store owner** I want to be able to **add FAQ's to the site** so that I can **answer questions a user might have**                                          |
+| 5   | As a **store owner** I want to be able to **edit/update a product** so that I can **change product prices, descriptions, images and other product criteria**      |
+| 6   | As a **store owner** I want to be able to **edit/delete categories** so that I can **change category names and keep the site up to date**                         |
+| 7   | As a **store owner** I want to be able to **edit/delete FAQ's** so that I can **change questions and answers**                                                    |
 
 **Epic: Navigation**
 
 | ID  | Content                                                                                                                                                   |
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 8   | As a **shopper** I want to be able to easily navigate through the site so that I can view desired content                                                    |
-| 9   | As a **shopper** I want to be able to quickly identify deals so that I can take advantage of special saving on products                                      |
-| 10  | Aa a **shopper** I want to be able to view a list of products so that I can select some to purchase                                                          |
-| 11  | As a **shopper** I want to be able to view a specific category of products so that I can quickly find products without having to search through all products |
-| 12  | As a **shopper** I want to be able to sort products by rating, price and name so that I can easily find what I'm looking for                                 |
-| 13  | As a **shopper** I want to be able to search for a product by name or description so that I can find a specific product i'd like to purchase                 |
-| 14  | As a **shopper** I want to be able to easily see what i've searched for and the number of results so that I can see whether the product I want is available  |
-| 15  | As a **shopper** I want to be able to view individual product details so that I can see the price, description, product rating, product image and reviews    |
-| 16  | As a **shopper** I want to be able to read FAQ's so that I can find answers to common questions before or after purchase                                     |
+| 8   | As a **shopper** I want to be able to **easily navigate through the site** so that I can **view desired content**                                                    |
+| 9   | As a **shopper** I want to be able to **quickly identify deals** so that I can **take advantage of special saving on products**                                      |
+| 10  | Aa a **shopper** I want to be able to **view a list of products** so that I can **select some to purchase**                                                          |
+| 11  | As a **shopper** I want to be able to **view a specific category of products** so that I can **quickly find products without having to search through all products** |
+| 12  | As a **shopper** I want to be able to **sort products by rating, price and name** so that I can **easily find what I'm looking for**                                 |
+| 13  | As a **shopper** I want to be able to **search for a product by name or description** so that I can **find a specific product i'd like to purchase**                 |
+| 14  | As a **shopper** I want to be able to **easily see what i've searched for and the number of results** so that I can **see whether the product I want is available**  |
+| 15  | As a **shopper** I want to be able to **view individual product details** so that I can **see the price, description, product rating, product image and reviews**    |
+| 16  | As a **shopper** I want to be able to **read FAQ's** so that I can **find answers to common questions before or after purchase**                                     |
 
 **Epic: Purchase**
 | ID | Content |
 | --- | ------------------------------- |
-| 17 | As a **shopper** I want to be able to easily select the quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong quantity |
-| 18 | As a **shopper** I want to be able to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will recieve         |
-| 19 | As a **shopper** I want to be able to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout             |
-| 20 | As a **shopper** I want to be able to easily enter my payment information so that I can checkout quickly and with no hassles                                         |
-| 21 | As a **shopper** I want to be able to view an order confirmation after checkout so that I can verify that I haven't made any mistakes                                |
-| 22 | As a **shopper** I want to be able to recieve an email confirmation after checking  so that I can keep the confirmation of what I've purchased for my records        |
+| 17 | As a **shopper** I want to be able to **easily select the quantity of a product when purchasing it** so that I can **ensure I don't accidentally select the wrong quantity** |
+| 18 | As a **shopper** I want to be able to **view items in my bag to be purchased** so that I can **identify the total cost of my purchase and all items I will recieve**         |
+| 19 | As a **shopper** I want to be able to **adjust the quantity of individual items in my bag** so that I can **easily make changes to my purchase before checkout**             |
+| 20 | As a **shopper** I want to be able to **easily enter my payment information** so that I can **checkout quickly and with no hassles**                                         |
+| 21 | As a **shopper** I want to be able to **view an order confirmation after checkout** so that I can **verify that I haven't made any mistakes**                                |
+| 22 | As a **shopper** I want to be able to **recieve an email confirmation after checking** so that I can **keep the confirmation of what I've purchased for my records**        |
 
 **Epic: User Interaction**
 
 | ID  | Content                                                                                                                                |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| 23  | As a **user** I want to be able to see ratings and reviews of products so that I can read the opinions of other users                  |
-| 24  | As a **user** I want to be able to sign up for a newsletter so that I can keep track of newly added products and sales                 |
-| 25  | As a **user** I want to be able to unsubscribe from the newsletter so that I can stop recieving emails it i've lost interest           |
-| 26  | As a **logged-in User** I want to be able to leave ratings and reviews so that I can share my experience with others                   |
-| 27  | As a **logged-in User** I want to be able to save selected products to my whishlist so that I can remember what i've been interested in |
+| 23  | As a **user** I want to be able to **see ratings and reviews of products** so that I can **read the opinions of other users**                  |
+| 24  | As a **user** I want to be able to **sign up for a newsletter** so that I can **keep track of newly added products and sales**                 |
+| 25  | As a **user** I want to be able to **unsubscribe from the newsletter** so that I can **stop recieving emails it i've lost interest**           |
+| 26  | As a **logged-in User** I want to be able to **leave ratings and reviews** so that I can **share my experience with others**                   |
+| 27  | As a **logged-in User** I want to be able to **save selected products to my whishlist** so that I can **remember what i've been interested in** |
 
 **Epic: Accounts**
 
@@ -119,7 +119,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 ## Features
 
-### **Home Page**
+### **Homepage**
 
 *Navigation bar:*
 - The navigation bar appears on every page so users can easily navigate through the site
@@ -138,7 +138,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 - A big hero-image advertising what the website is about
 - A 'Shop Now' button for fast access to the products
 
-*Testimonails*
+*Testimonials*
 - A carousel with testimonials from industry professionals and customers
 
 *Footer:*
