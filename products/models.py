@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Category(models.Model):
     """ category models """
@@ -32,6 +33,7 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     review_count = models.DecimalField(max_digits=6, decimal_places=0, null=True, blank=True, default=0)
     sort_price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    add_to_whishlist = models.ManyToManyField(User, related_name='whishlist_add', blank=True)
 
     def __str__(self):
         return self.name
