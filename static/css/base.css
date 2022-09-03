@@ -100,20 +100,6 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-.product-img{
-    height: 270px;
-    width: 250px;
-}
-
-.product-details-img{
-    max-width: 500px;
-    max-height: 550px;
-}
-
-.description-text{
-    line-height: 27px;
-}
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
