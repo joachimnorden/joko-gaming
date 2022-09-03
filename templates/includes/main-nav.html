@@ -9,10 +9,10 @@
                 Categories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="categories-link">
-                <a href="#" class="dropdown-item">Headset</a>
-                <a href="#" class="dropdown-item">Mouse</a>
-                <a href="#" class="dropdown-item">Keyboard</a>
-                <a href="#" class="dropdown-item">Other</a>
+                <a href="{% url 'products' %}?category=headset" class="dropdown-item">Headset</a>
+                <a href="{% url 'products' %}?category=mice" class="dropdown-item">Mouse</a>
+                <a href="{% url 'products' %}?category=keyboard" class="dropdown-item">Keyboard</a>
+                <a href="{% url 'products' %}?category=other" class="dropdown-item">Other</a>
             </div>
         </li>
 
