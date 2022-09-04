@@ -21,6 +21,11 @@
     margin-top: auto;
 }
 
+.product-img-grid {
+    max-height: 400px;
+    max-width: 100%;
+    object-fit: contain;
+}
 
 #myBtn {
     display: none;
