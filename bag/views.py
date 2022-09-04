@@ -50,7 +50,7 @@ def adjust_bag(request, item_id):
     quantity = int(request.POST.get('quantity'))
     color = None
     if 'product_color' in request.POST:
-        size = request.POST['product_color']
+        color = request.POST['product_color']
     bag = request.session.get('bag', {})
 
     if color:
