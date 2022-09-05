@@ -56,6 +56,15 @@
                                 €{{ product.sort_price }}
 
                             </td>
+                            <td>
+                                <div class="btn logo-font p-0">
+
+                                    <a href="{% url 'remove_from_wishlist' book.id %}"
+                                        class="btn bg-danger text-light">Remove</a>
+
+                                </div>
+
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>

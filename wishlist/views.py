@@ -15,3 +15,39 @@ def wishlist(request):
         'on_page': True,
     }
     return render(request, template, context)
+
+
+@login_required
+def add_to_wishlist(request, product_id):
+    """ View to add products to wishlist"""
+    user = UserProfile.objects.get(user=request.user)
+    product = get_object_or_404(Product, pk=product_id)
+    wishlist_exists = Wishlist.objects.filter(user=user, product=product).exists()
+
+    if wishlist_exists:
+        wishlist_item = Wishlist.objects.get(
+            user=user,
+            product=product
+        )
+        wishlist_item.delete()
+        messages.info(request, 'Removed from wishlist')
+        return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        wishlist_item = Wishlist.objects.create(
+            user=user,
+            product=product
+        )
+        messages.success(
+            request, f'Successfully added {wishlist_item} to wishlist')
+        return redirect(reverse('product_detail', args=[product.id]))
+
+
+@login_required
+def remove_from_wishlist(request, product_id):
+    """ Remove from wishlist"""
+    user = UserProfile.objects.get(user=request.user)
+    book = get_object_or_404(Product, pk=product_id)
+    wishlist_item = Wishlist.objects.get(user=user, product=product)
+    wishlist_item.delete()
+    messages.success(request, f'Successfully removed {product.title}')
+    return redirect(reverse('wishlist'))
