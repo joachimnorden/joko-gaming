@@ -37,6 +37,12 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <h2 class="mb-0 text-left font-weight-bold">{{ product.name }} </h2>
+                {% if request.user.is_superuser %}
+                    <small class="ml-3">
+                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                    </small>
+                {% endif %}
                 <p class="lead mb-0 text-left font-weight-bold">€{{product.price}}</p>
                 <div class="book-rating d-inline">{% include 'includes/product_rating.html' %}</div>
                 <p class="ml-3 small d-inline mb-5">({{ product.review_count }})</p>
