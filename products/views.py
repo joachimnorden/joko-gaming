@@ -24,7 +24,7 @@ def all_products(request):
                 sort = sortkey
                 if sortkey == 'name':
                     sortkey = 'lower_name'
-                    books = products.annotate(lower_title=Lower('name'))
+                    products = products.annotate(lower_title=Lower('name'))
                 if sortkey == 'category':
                     sortkey = 'category__name'
 

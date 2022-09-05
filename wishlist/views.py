@@ -19,9 +19,9 @@ def wishlist(request):
 
 @login_required
 def add_to_wishlist(request, product_id):
-    """ View to add products to wishlist"""
+    """ View to add book to wishlist"""
     user = UserProfile.objects.get(user=request.user)
-    product = get_object_or_404(Product, pk=product_id)
+    book = get_object_or_404(Product, pk=product_id)
     wishlist_exists = Wishlist.objects.filter(user=user, product=product).exists()
 
     if wishlist_exists:
@@ -46,8 +46,8 @@ def add_to_wishlist(request, product_id):
 def remove_from_wishlist(request, product_id):
     """ Remove from wishlist"""
     user = UserProfile.objects.get(user=request.user)
-    book = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id)
     wishlist_item = Wishlist.objects.get(user=user, product=product)
     wishlist_item.delete()
-    messages.success(request, f'Successfully removed {product.title}')
+    messages.success(request, f'Successfully removed {product.name}')
     return redirect(reverse('wishlist'))
