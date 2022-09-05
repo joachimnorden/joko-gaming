@@ -215,3 +215,4 @@ def delete_category(request, category_id):
     messages.success(request, 'Category deleted')
 
     return redirect(reverse('add_category'))
+    
