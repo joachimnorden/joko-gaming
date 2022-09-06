@@ -21,7 +21,7 @@ def wishlist(request):
 def add_to_wishlist(request, product_id):
     """ View to add book to wishlist"""
     user = UserProfile.objects.get(user=request.user)
-    book = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id)
     wishlist_exists = Wishlist.objects.filter(user=user, product=product).exists()
 
     if wishlist_exists:

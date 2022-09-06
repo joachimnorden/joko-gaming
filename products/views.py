@@ -3,9 +3,11 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q, F
 from django.db.models.functions import Lower
+from django.db.models import Avg
 
-from .models import Product, Category
-from .forms import ProductForm, CategoryForm
+from profiles.models import UserProfile
+from .forms import ProductForm, CategoryForm, ReviewForm
+from .models import Product, Category, Review
 
 
 def all_products(request):
@@ -90,8 +92,48 @@ def product_detail(request, product_id):
     """ A view to show product details"""
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.all().filter(product=product).order_by('-created_on')
+    review_count = len(reviews)
+
+    if request.user.is_authenticated:
+        user_profile = get_object_or_404(UserProfile, user=request.user)
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            reviews.create(
+                user=user_profile,
+                product=product,
+                rating=request.POST.get('rating'),
+                body=request.POST.get('body')
+            )
+
+            reviews = Review.objects.all().filter(product=product)
+            rating = reviews.aggregate(Avg('rating'))['rating__avg']
+            product.rating = rating
+            product.review_count = review_count + 1
+            product.save()
+            messages.success(request, 'Review successfully added')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(
+                request, 'Failed to add review.\
+                    Please ensure the form is valid.')
+
+    else:
+        form = ReviewForm()
+        if request.user.is_authenticated:
+            reviewed = Review.objects.all().filter(
+                product=product).filter(user=user_profile.id)
+        else:
+            reviewed = False
+
     context = {
         'product': product,
+        'form': form,
+        'reviews': reviews,
+        'review_count': review_count,
+        'reviewed': reviewed,
     }
     return render(request, 'products/product_detail.html', context)
 
