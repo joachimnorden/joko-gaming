@@ -36,17 +36,30 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
-                <h2 class="mb-0 text-left font-weight-bold">{{ product.name }} </h2>
-                {% if request.user.is_superuser %}
-                    <small class="ml-3">
-                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                    </small>
+                <h2 class="mb-0 text-left font-weight-bold">{{ product.brand }} - {{ product.name }} </h2>
+                {% if product.sale_price %}
+                <p class="mr-1 mb-0"><del class="text-muted">€{{ product.price }} </del></p>
+                <p class="lead font-weight-bold">€{{ product.sort_price }}</p>
+                {% else %}
+
+                <p class=" lead font-weight-bold">€{{ product.sort_price }}</p>
                 {% endif %}
-                <p class="lead mb-0 text-left font-weight-bold">€{{product.price}}</p>
-                <div class="product-rating d-inline">{% include 'includes/product_rating.html' %}</div>
+
+                <!-- edit and delete btn -->
+                {% if request.user.is_superuser %}
+                <div>
+                    <small class="text-uppercase">
+                        <a href="{% url 'edit_product' product.id %}" class="text-success">edit</a>
+                        <button class="btn btn-sm p-0 pl-1 logo-font text-danger border-0 text-uppercase"
+                            data-toggle="modal" data-target="#product-modal-{{product.id}}">Delete</button>
+                    </small>
+
+                    {% include 'products/includes/delete_product_modal.html' %}
+
+                </div>
+                {% endif %}
+                <div class="product-rating d-inline">{% include 'products/includes/product_rating.html' %}</div>
                 <p class="ml-3 small d-inline mb-5">({{ product.review_count }})</p>
-                <p class="mt-5 mb-3"><strong>Brand:</strong> {{ product.brand }} </p>
                 <p class="mt-5 description-text"><strong>Description:</strong></p>
                 <p>{{product.description}}</p>
             </div>
@@ -140,5 +153,5 @@
 
 {% block postloadjs %}
 {{ block.super }}
-{% include 'includes/quantity_input_script.html' %}
+{% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
