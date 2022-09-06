@@ -39,8 +39,8 @@
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
-                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                            <option value="sort_price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                            <option value="sort_price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
                             <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
                             <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
                             <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
@@ -63,35 +63,70 @@
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card border-0">
+                        {% if product.discount %}
+                        <p class="sale-new-label text-shadow">Save €{{ product.discount }}!</p>
+                        {% endif %}
+
+                        {% if book.is_new %}
+                        <p class="sale-new-label text-shadow label-new{% if product.discount %} lower-label{% endif %}">
+                            NEW!
+                        </p>
+                        {% endif %}
                         {% if product.image %}
-                        <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        <a href="{% url 'product_detail' product.id %}" class="text-center">
+                            <img class="card-img-top img-fluid product-img" src="{{ product.image.url }}"
+                                alt="{{ product.name }}">
                         </a>
                         {% else %}
-                        <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        <a href="{% url 'product_detail' product.id %}" class="text-center">
+                            <img class="card-img-top img-fluid product-img" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ product.name }}">
                         </a>
                         {% endif %}
+
+
                         <div class="card-body pb-0">
                             <p class="mb-0 lead font-weight-bold">{{ product.name }}</p>
-                            <p class="mb-0">{{ product.brand }}</p>
-                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                            {% if product.rating %}
-                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }}/5</small>
-                            {% else %}
-                            <small class="text-muted">No Rating</small>
-                            {% endif %}
-                            {% if request.user.is_superuser %}
-                                <small class="ml-3">
-                                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                </small>
+                            <p class="text-orange lead mb-0">
+
+
+                                {% if product.sale_price %}
+                                <small class="mr-1"><del class="text-muted">€{{ product.price }} </del></small>
+                                <a class="text-sale-new font-weight-bold text-decoration-none"
+                                    href="{% url 'product_detail' product.id %}">€{{ product.sort_price }}</a>
+                                {% else %}
+
+                                <a class="text-sale-new font-weight-bold text-decoration-none"
+                                    href="{% url 'product_detail' product.id %}">€{{ product.sort_price }}</a>
+                                {% endif %}
+                            </p>
+                            <div class="product-rating d-inline">
+                                {% include 'products/includes/product_rating.html' %}</div>
+
+                            {% if book.review_count > 0 %}
+                            <p class="ml-3 small d-inline">({{ product.review_count}})</p>
                             {% endif %}
                         </div>
+                        {% if request.user.is_superuser %}
+                        <div class="ml-4 text-uppercase">
+                            <a href="{% url 'edit_product' product.id %}" class="text-success btn btn-small border-0">edit</a>
+                            <button class="bg-light btn-sm p-0 logo-font text-danger border-0 text-uppercase"
+                                data-toggle="modal" data-target="#product-modal-{{product.id}}">Delete</button>
+                        </div>
+
+                        {% include 'products/includes/delete_product_modal.html' %}
+
+                        {% endif %}
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
-                                    <button type="submit" class="btn border-secondary rounded-pill btn-style w-100">Add to bag</button>
+                                    <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                        <button type="submit" class=" btn border-secondary
+                                            rounded-pill btn-style w-100" name="quantity" value="1">Add to bag</button>
+                                    </form>
+
                                 </div>
                             </div>
                         </div>
@@ -100,6 +135,7 @@
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
                     <hr>
+
                 </div>
                 {% endif %}
                 {% if forloop.counter|divisibleby:2 %}
@@ -117,6 +153,12 @@
                     <hr>
                 </div>
                 {% endif %}
+
+                {% empty %}
+                <div class="col mt-5 empty-result">
+                    <p class="text-center lead">Sorry, no product match that search.</p>
+
+                </div>
                 {% endfor %}
             </div>
         </div>
