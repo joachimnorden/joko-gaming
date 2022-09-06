@@ -60,6 +60,17 @@
                                 <p>Published</p>
                                 {% endif %}
                             </td>
+                            <td>
+                                <div class="logo-font">
+
+                                    <a href="{% url 'edit_faq' question.id %}"
+                                        class="text-success d-inline btn p-0 btn-small">Edit</a>
+
+                                    <button class="btn logo-font text-danger p-0 d-inline btn-sm" data-toggle="modal"
+                                        data-target="#deleteFAQ{{question.id}}">Delete</button>
+                                </div>
+                                {% include 'faq/includes/delete_faq_modal.html' %}
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>

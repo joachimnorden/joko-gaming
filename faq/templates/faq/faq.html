@@ -40,7 +40,17 @@
 
                             </button>
                         </h2>
+                        {% if request.user.is_superuser %}
+
+                        <small class="text-uppercase ml-3">
+                            <a href="{% url 'edit_faq' question.id %}"
+                                class="text-success text-decoration-none p-1">edit</a>
+                            <button class="btn btn-sm p-1 logo-font text-danger text-uppercase" data-toggle="modal"
+                                data-target="#deleteFAQ{{question.id}}">Delete</button>
+                        </small>
+                        {% endif %}
                     </div>
+                    {% include 'faq/includes/delete_faq_modal.html' %}
                     <div id="collapseOne-{{question.id}}" class="collapse" aria-labelledby="headingOne-{{question.id}}"
                         data-parent="#question-{{question.id}}">
                         <div class="card-body">
