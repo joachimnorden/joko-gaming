@@ -318,3 +318,24 @@ def edit_review(request, review_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_review(request, review_id):
+    """ Delete review """
+    review = get_object_or_404(Review, pk=review_id)
+    product = review.product
+
+    if request.user.id != review.user.user.id:
+        messages.error(request, 'Sorry, you do not have access to that.')
+        return redirect(
+            reverse('product_detail', args=[product.id]))
+
+    review.delete()
+    reviews = Review.objects.all().filter(product=product)
+    rating = reviews.aggregate(Avg('rating'))['rating__avg']
+    product.rating = rating
+    product.review_count -= 1
+    product.save()
+    messages.success(request, 'Review successfully deleted!')
+    return redirect(reverse('product_detail', args=[product.id]))    
