@@ -223,6 +223,14 @@ a.category-badge > span.badge:hover {
 	color: #17a2b8; /* text-info */
 }
 
+/* MailChimp style */
+
+#mc_embed_signup {
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    width:600px;
+}
 
 /* Product Form */
 
