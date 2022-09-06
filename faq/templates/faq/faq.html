@@ -41,6 +41,12 @@
                             </button>
                         </h2>
                     </div>
+                    <div id="collapseOne-{{question.id}}" class="collapse" aria-labelledby="headingOne-{{question.id}}"
+                        data-parent="#question-{{question.id}}">
+                        <div class="card-body">
+                            {{question.answer}}
+                        </div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
