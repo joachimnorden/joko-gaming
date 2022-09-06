@@ -45,3 +45,48 @@ def add_faq(request):
         'on_page': True
     }
     return render(request, template, context)
+
+
+@login_required
+def edit_faq(request, question_id):
+    """ Edit a faq on faq page """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    question = get_object_or_404(Question, pk=question_id)
+    if request.method == 'POST':
+        form = FaqForm(request.POST, instance=question)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated FAQ!')
+            return redirect(reverse('add_faq'))
+        else:
+            messages.error(
+                request,
+                'Failed to update FAQ. Please ensure the form is valid.')
+    else:
+        form = FaqForm(instance=question)
+        messages.info(request, f'You are editing {question.question}')
+
+    template = 'faq/edit_faq.html'
+    context = {
+        'form': form,
+        'question': question,
+        'on_page': True
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_faq(request, question_id):
+    """ Delete FAQ"""
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    question = get_object_or_404(Question, pk=question_id)
+    question.delete()
+    messages.success(request, 'FAQ deleted')
+
+    return redirect(reverse('add_faq'))
