@@ -21,8 +21,8 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="#" class="dropdown-item">New Arrivals</a>
-                <a href="#" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?new=true" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?on_sale=true" class="dropdown-item">Deals</a>
             </div>
         </li>
     </ul>

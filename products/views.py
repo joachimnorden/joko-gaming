@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.db.models import Q, F
 from django.db.models.functions import Lower
 
 from .models import Product, Category
@@ -16,42 +16,62 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    new = None
+    sale = None
+    price = None    
 
     if request.GET:
-        if request.GET:
-            if 'sort' in request.GET:
-                sortkey = request.GET['sort']
-                sort = sortkey
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+
+        if 'direction' in request.GET:
+            direction = request.GET['direction']
+
+            if sortkey == 'rating':
+                if direction == 'desc':
+                    products = products.order_by(
+                        F(sortkey).desc(nulls_last=True)
+                    )
+                else:
+                    products = products.order_by(
+                        F(sortkey).asc(nulls_first=True)
+                    )
+            else:
                 if sortkey == 'name':
                     sortkey = 'lower_name'
-                    products = products.annotate(lower_title=Lower('name'))
+                    products = products.annotate(lower_name=Lower('name'))
                 if sortkey == 'category':
                     sortkey = 'category__name'
 
-                if 'direction' in request.GET:
-                    direction = request.GET['direction']
-                    if direction == 'desc':
-                        sortkey = f'-{sortkey}'
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+
                 products = products.order_by(sortkey)
 
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+    if 'category' in request.GET:
+        categories = request.GET['category'].split(',')
+        products = products.filter(category__name__in=categories)
+        categories = Category.objects.filter(name__in=categories)
 
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+    if 'new' in request.GET:
+        products = products.filter(is_new=True)
+        new = True
 
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
-                
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
+    if 'on_sale' in request.GET:
+        products = products.filter(~Q(sale_price=price))
+        sale = True
+
+    if 'q' in request.GET:
+        query = request.GET['q']
+        if not query:
+            messages.error(
+                request, "You didn't enter any search criteria!")
+            return redirect(reverse('products'))
+
+        queries = Q(
+            name__icontains=query) | Q(description__icontains=query)
+        products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
 
@@ -60,8 +80,9 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         "current_sorting": current_sorting,
+        'new': new,
+        'sale': sale,
     }
-
     return render(request, 'products/products.html', context)
 
 
