@@ -9,4 +9,5 @@ urlpatterns = [
      path('delete_faq/<int:question_id>/', views.delete_faq,
           name='delete_faq'),
      path('shipping_info/', views.shipping_page, name='shipping_info'),
+     path('privacy_policy/', views.privacy_page, name='privacy_policy'),
 ]

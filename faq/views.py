@@ -98,3 +98,11 @@ def shipping_page(request):
     template = 'faq/shipping_info.html'
 
     return render(request, template)
+
+
+def privacy_page(request):
+    """ Privacy page view"""
+
+    template = 'faq/privacy_policy.html'
+
+    return render(request, template)    
