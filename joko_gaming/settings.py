@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -63,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'joko_gaming.urls'
 
@@ -129,6 +131,11 @@ DATABASES = {
     }
 }
 
+#DATABASES = {
+#    'default': dj_database_url.parse('postgres://gnicorjfzrkfit:5a664c877665462a3524c7b3c6b60225dc065a0d92922fcc037959895f872322@ec2-54-170-90-26.eu-west-1.compute.amazonaws.com:5432/da1q55e309ed9g')
+#}
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-joachimnorde-jokogaming-jpalkt9vd3o.ws-eu63.gitpod.io','https://*.127.0.0.1']
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

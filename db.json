@@ -1,0 +1,339 @@
+[
+    {
+      "model": "products.product",
+      "pk": 1,
+      "fields": {
+        "category": 3,
+        "sku": "6360425",
+        "brand": "Corsair",
+        "name": "VOID RGB ELITE Wireless 7.1 Surround Sound Gaming",
+        "description": "Enjoy an immersive audio experience while gaming with this carbon CORSAIR VOID RGB ELITE wireless headset. The custom-tuned 50mm high-density neodymium drivers offer crisp, powerful sound, while the breathable microfiber mesh and soft memory foam earpads add comfort to all-day gaming. This CORSAIR VOID RGB ELITE wireless headset has an omnidirectional microphone for clear communication, and the on-ear controls help you adjust sound settings easily.",
+        "price": "109.99",
+        "sale_price": "82.99",
+        "discount": "27.00",
+        "is_new": true,
+        "has_colors": true,
+        "image": "6360425_sd_SefX0SK.jpg",
+        "rating": "5.00",
+        "review_count": "1",
+        "sort_price": "82.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 2,
+      "fields": {
+        "category": 3,
+        "sku": "6458875",
+        "brand": "Corsair",
+        "name": "VIRTUOSO RGB XT Wireless Dolby Atmos",
+        "description": "The CORSAIR VIRTUOSO RGB Wireless XT delivers a high-fidelity audio experience for the most discerning players, combining uncompromising sound quality with all-day, all-night comfort from its premium memory foam earpads and headband. Connect wirelessly to virtually any device with simultaneous SLIPSTREAM WIRELESS and Qualcomm® aptX™ HD Bluetooth®, or wired via 3.5mm or USB. Make yourself heard with superb vocal clarity thanks to a broadcast-grade, omnidirectional detachable microphone with wide dynamic range. Lightweight aluminum construction ensures long-term durability, while up to 15 hours of wireless battery life and 60ft of range give you absolute listening freedom. Micro-perforated aluminum on each ear cup allows RGB lighting to shine through for visual flair. With immersive Dolby Atmos® and CORSAIR iCUE software to enable custom audio equalizer settings, RGB lighting control, and more, you can be the maestro of your gaming experience.",
+        "price": "269.99",
+        "sale_price": "253.99",
+        "discount": "16.00",
+        "is_new": true,
+        "has_colors": false,
+        "image": "6458875_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "253.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 3,
+      "fields": {
+        "category": 3,
+        "sku": "6478276",
+        "brand": "Logitech",
+        "name": "G535 LIGHTSPEED Wireless Dolby Atmos Over-the-Ear",
+        "description": "G535 gives you performance, freedom and comfort for all your gaming sessions. Enjoy advanced LIGHTSPEED wireless, up to 33-hour battery life, and 40 mm drivers for crystal-clear sound. Just 236 grams, an adjustable headband, and soft memory foam earpads ensure all-day comfort.",
+        "price": "129.99",
+        "sale_price": "90.99",
+        "discount": "39.00",
+        "is_new": true,
+        "has_colors": false,
+        "image": "6478276_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "90.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 4,
+      "fields": {
+        "category": 2,
+        "sku": "6411396",
+        "brand": "Razer",
+        "name": "Viper Ultimate Ultralight Wireless Optical",
+        "description": "Get a better handle on your games with this Razer Viper Ultimate wireless gaming mouse. The 20,000 dpi optical sensor delivers pinpoint accuracy for obliterating your opponents on the battlefield, while the ambidextrous design allows comfortable use. This Razer Viper Ultimate wireless gaming mouse has eight programmable buttons for customization, and the lightweight profile allows easy tracking.",
+        "price": "129.99",
+        "sale_price": "69.99",
+        "discount": "60.00",
+        "is_new": false,
+        "has_colors": false,
+        "image": "6411396_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "69.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 5,
+      "fields": {
+        "category": 2,
+        "sku": "6333840",
+        "brand": "Logitech",
+        "name": "G703 LIGHTSPEED Wireless Optical",
+        "description": "Logitech G703 LIGHTSPEED Gaming Mouse meets the next-gen HERO 25K sensor. Go pro with precise gameplay at 25,600 max DPI and zero smoothing, plus enhanced wireless performance. 10X the battery efficiency of previous generation sensors means up to 35 hours of gameplay with LIGHTSYNC RGB enabled. A comfortable design meets advanced button technology for supreme comfort and crisp, clean clicks. G703 LIGHTSPEED lets you play like the pros — and play to win.",
+        "price": "89.99",
+        "sale_price": "69.99",
+        "discount": "20.00",
+        "is_new": true,
+        "has_colors": false,
+        "image": "6333840_sd.jpg",
+        "rating": "4.60",
+        "review_count": "2",
+        "sort_price": "69.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 6,
+      "fields": {
+        "category": 2,
+        "sku": "6265133",
+        "brand": "Logitech",
+        "name": "G502 HERO Wired Optical",
+        "description": "Step up your game with this Logitech HERO Core wired gaming mouse.Customize RGB lighting to match your style and environment or sync to other Logitech G products. G502 High Performance Gaming Mouse features Logitech HERO 25K optical sensor for maximum tracking accuracy and precision. No matter your gaming style, it’s easyto tweak G502 to match your requirements, with custom profiles for your games, adjustable sensitivity from 200 up to 25,600 DPI, and tunable weight system that allows for tuning and balancing of up to five additional weights for just the right balance andfeel.",
+        "price": "49.99",
+        "sale_price": "39.99",
+        "discount": "10.00",
+        "is_new": false,
+        "has_colors": false,
+        "image": "6265133_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "39.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 7,
+      "fields": {
+        "category": 2,
+        "sku": "6409362",
+        "brand": "Logitech",
+        "name": "G203 LIGHTSYNC Wired Optical",
+        "description": "G203 LIGHTSYNC is ready to play with an 8,000 DPI sensor and customizable, vibrant LIGHTSYNC RGB. LIGHTSYNC RGB can be customizedwith colorwave effects or patterns across ~16.8 million colors to suit your play style, setup and mood. The gaming-grade sensor responds precisely to your movements and you can customizethe settings to suit the sensitivity you like. The simple 6-button layout and classic gaming shape form a comfortable, time-tested and loved design, with buttons that you can program to simplify tasks. Primary buttons are mechanical and tensioned with durable metal springs for reliability, performance and an excellent feel. Advanced features require Logitech G HUB Gaming Software.",
+        "price": "39.99",
+        "sale_price": "29.99",
+        "discount": "10.00",
+        "is_new": false,
+        "has_colors": true,
+        "image": "6409362_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "39.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 8,
+      "fields": {
+        "category": 1,
+        "sku": "6463499",
+        "brand": "Razer",
+        "name": "BlackWidow V3 Mini Hyperspeed 65% Wireless Mechanical Linear Switch",
+        "description": "Compact enough for any space, and versatile enough for all setups—this is the Razer BlackWidow V3 Mini HyperSpeed. Enjoy seamless gaming in a sleek package with a wireless 65% mechanical gaming keyboard that still retains arrow keys for the perfect balance of form and function.",
+        "price": "179.99",
+        "sale_price": "119.99",
+        "discount": "60.00",
+        "is_new": false,
+        "has_colors": false,
+        "image": "6463499_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "119.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 9,
+      "fields": {
+        "category": 1,
+        "sku": "6360838",
+        "brand": "Logitech",
+        "name": "G815 LIGHTSYNC Full-size Wired Mechanical GL Clicky Switch",
+        "description": "G815 packs advanced gaming technologies into an ultrathin and sophisticated design. Fully customizable per key, LIGHTSYNC RGB technology also reacts to in-game action, audio and screen color as you choose. With a sleek, impossibly thin yet durable and sturdy design, G815 features high-performance low-profile GL switches available in Clicky, Tactile, or Linear experience. Programmable G-keys let you create and execute complex actions simply and intuitively, and the volume wheel and media keys give you fast, easy control over video, audio, and streaming. G815 also features a USB pass-through to quickly plug in a flash drive or another device to charge.",
+        "price": "199.99",
+        "sale_price": "169.99",
+        "discount": "30.00",
+        "is_new": true,
+        "has_colors": false,
+        "image": "6360838_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "169.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 17,
+      "fields": {
+        "category": 1,
+        "sku": "6414194",
+        "brand": "Logitech",
+        "name": "G915 LIGHTSPEED TKL Wireless Mechanical",
+        "description": "G915 TKL is a new class of wireless mechanical gaming keyboard with three selections of low-profile GL switches and pro-grade 1 ms LIGHTSPEED wireless. Capable of delivering up to 40 hours of non-stop gaming on a full charge. Fully customizable per-key and advanced LIGHTSYNC RGB technology to synchronize lighting with any content.",
+        "price": "229.99",
+        "sale_price": null,
+        "discount": null,
+        "is_new": false,
+        "has_colors": true,
+        "image": "6414194_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "229.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 18,
+      "fields": {
+        "category": 1,
+        "sku": "6453148",
+        "brand": "Corsair",
+        "name": "K65 RGB Mini Wired 60% Mechanical Cherry",
+        "description": "The CORSAIR K65 RGB MINI 60% Mechanical Gaming Keyboard combines top-level performance with portability. PBT double-shot keycaps deliver exceptional durability with a premium look and feel. With 8,000Hz hyper-polling enabled by AXON hyper-processing technology, CHERRY MX SPEED RGB Silver mechanical keyswitches, and expansive onboard shortcuts, the K65 RGB MINI offers big performance and functionality in a compact design. Vivid per-key RGB backlighting is fully customizable through CORSAIR iCUE software, alongside key remaps, custom macros, and immersive integration with select games. Save up to 50 profiles to take with you anywhere with 8MB of onboard storage. Full N-key rollover, Windows Key Lock mode, and a detachable braided USB Type-C cable make the K65 RGB MINI a high-performance gaming companion at home and on-the-go, so you can win in any space.",
+        "price": "109.99",
+        "sale_price": "81.99",
+        "discount": "28.00",
+        "is_new": false,
+        "has_colors": false,
+        "image": "6453148_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "81.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 19,
+      "fields": {
+        "category": 2,
+        "sku": "6372600",
+        "brand": "Logitech",
+        "name": "G502 HERO SE Wired Optical",
+        "description": "Breeze past the competition with this Logitech HERO high-performance gaming mouse. The 100 to 16,000 DPI range provides exceptional responsiveness and precision, while the 11 programmable buttons enable increased control. This Logitech HERO high-performance gaming mouse comes with five 3.6g weights for balance adjustment, and the primary buttons have mechanical switches that are rated up to 50 million clicks for lasting quality.",
+        "price": "79.99",
+        "sale_price": "35.99",
+        "discount": "44.00",
+        "is_new": false,
+        "has_colors": false,
+        "image": "6372600_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "35.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 20,
+      "fields": {
+        "category": 2,
+        "sku": "6500796",
+        "brand": "HyperX",
+        "name": "Pulsefire Haste Lightweight Wireless Optical",
+        "description": "The HyperX Pulsefire Haste Wireless Gaming Mouse packs in all the best features of the ultra-lightweight Pulsefire Haste plusa wireless connection and long-lasting battery life, butonly addsa mere 2g of additional weight*. If you’ve been hesitant to cut themousecord, fear not, as the Pulsefire Haste’s 1ms report rate and 2.4GHz signal provides a low-latency wireless connection that meets the demands of elite players. Not only that, but with up to 100 hours of battery life**, you’ll get over 4 full days of clicking on heads froma single chargeofyour honeycomb mouse. With a responsive, split-button design, you won’t have to worry about missed clicks, as the satisfying, tactile TTC Golden micro switchesare rated for up to 80 million clicks.If you prefer a cable, HyperX also includes aHyperFlex cablewhich teams upwith thevirgin-grade PTFE skates to delivera smooth, easy glide.",
+        "price": "79.99",
+        "sale_price": null,
+        "discount": null,
+        "is_new": true,
+        "has_colors": false,
+        "image": "6500796_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "79.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 21,
+      "fields": {
+        "category": 4,
+        "sku": "6180807",
+        "brand": "Logitech",
+        "name": "G640 Gaming Mouse Pad",
+        "description": "Respond quickly to on-screen action with this large Logitech gaming mousepad. The heat-treated cloth surface is smooth with just the right amount of friction for rapid direction changes and small, precise movements. This low-profile Logitech gaming mousepad has a stable rubber backing to prevent unwanted slipping and bunching during game play.",
+        "price": "39.99",
+        "sale_price": "24.99",
+        "discount": "15.00",
+        "is_new": false,
+        "has_colors": false,
+        "image": "6180807_sd.jpg",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "24.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 22,
+      "fields": {
+        "category": 4,
+        "sku": "5637211",
+        "brand": "SteelSeries",
+        "name": "QcK Cloth Gaming Mouse Pad (XXL)",
+        "description": "Beat the competition with this SteelSeries QcK XXL mouse pad. The sensitivity of this mouse pad transfers every motion to the screen, and its generous size ensures your mouse never slides off and onto the table. The surface of this SteelSeries QcK XXL mouse pad is nearly friction-free to keep your focus on the game.",
+        "price": "29.99",
+        "sale_price": null,
+        "discount": null,
+        "is_new": true,
+        "has_colors": false,
+        "image": "",
+        "rating": null,
+        "review_count": "0",
+        "sort_price": "29.99",
+        "add_to_whishlist": []
+      }
+    },
+    {
+      "model": "faq.question",
+      "pk": 1,
+      "fields": {
+        "question": "What does Joko Gaming sell?",
+        "answer": "We sell computer accessories with gamers in mind. Only selected products that meets the high demand from gamers.",
+        "created_on": "2022-09-06T05:09:00.455Z",
+        "updated_on": "2022-09-06T05:09:00.455Z",
+        "status": 1
+      }
+    },
+    {
+      "model": "faq.question",
+      "pk": 4,
+      "fields": {
+        "question": "Test",
+        "answer": "Test",
+        "created_on": "2022-09-06T05:36:25.061Z",
+        "updated_on": "2022-09-06T05:36:25.061Z",
+        "status": 1
+      }
+    }
+  ]
