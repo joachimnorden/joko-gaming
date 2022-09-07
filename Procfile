@@ -1,0 +1,1 @@
+web: gunicorn joko_gaming.wsgi:application
