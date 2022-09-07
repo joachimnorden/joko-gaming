@@ -90,3 +90,11 @@ def delete_faq(request, question_id):
     messages.success(request, 'FAQ deleted')
 
     return redirect(reverse('add_faq'))
+
+
+def shipping_page(request):
+    """ Shipping page view"""
+
+    template = 'faq/shipping_info.html'
+
+    return render(request, template)
