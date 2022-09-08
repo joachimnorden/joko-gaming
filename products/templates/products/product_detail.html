@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block extra_title %} | {{product.name}} {% endblock %}
+
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
 {% endblock %}
@@ -37,6 +39,14 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <h2 class="mb-0 text-left font-weight-bold">{{ product.brand }} - {{ product.name }} </h2>
+                <div class="mb-3">
+                    <a href="#reviews-section" class="text-decoration-none">
+                        <div class="product-rating d-inline">{% include 'products/includes/product_rating.html' %}</div>
+                    </a>
+                    {% if product.review_count > 0 %}
+                    <p class="ml-3 small d-inline">({{ product.review_count}})</p>
+                    {% endif %}
+                </div>
                 {% if product.sale_price %}
                 <p class="mr-1 mb-0"><del class="text-muted">€{{ product.price }} </del></p>
                 <p class="lead font-weight-bold">€{{ product.sort_price }}</p>
@@ -58,8 +68,6 @@
 
                 </div>
                 {% endif %}
-                <div class="product-rating d-inline">{% include 'products/includes/product_rating.html' %}</div>
-                <p class="ml-3 small d-inline mb-5">({{ product.review_count }})</p>
                 <p class="mt-5 description-text"><strong>Description:</strong></p>
                 <p>{{product.description}}</p>
             </div>

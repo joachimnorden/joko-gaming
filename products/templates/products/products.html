@@ -64,11 +64,11 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card border-0">
                         {% if product.discount %}
-                        <p class="sale-new-label text-shadow">Save €{{ product.discount }}!</p>
+                        <p class="sale-new-label sale-label text-shadow">Save €{{ product.discount }}!</p>
                         {% endif %}
 
                         {% if product.is_new %}
-                        <p class="sale-new-label text-shadow label-new{% if product.discount %} lower-label{% endif %}">
+                        <p class="sale-new-label new-label text-shadow {% if product.discount %} lower-label{% endif %}">
                             NEW!
                         </p>
                         {% endif %}

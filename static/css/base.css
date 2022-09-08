@@ -252,11 +252,22 @@ a.category-badge > span.badge:hover {
 }
 
 /* MailChimp style */
-
-#mc_embed_signup {
-    background:#fff;
+#mc_embed_signup .mc-field-group {
+    padding-bottom: 0%;
 }
 
+#mc_embed_signup .mc-field-group label {
+    color: white;
+}
+
+#mc_embed_signup .indicates-required {
+    color: white;
+}
+
+#mc_embed_signup .button {
+    background-color: #14b582;
+    height: 43px;
+}
 /* Product Form */
 
 .btn-file {
