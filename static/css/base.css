@@ -36,6 +36,10 @@ body {
     min-width: 260px;
 }
 
+.bag-nav-button {
+    color: #111;
+}
+
 .btn-black {
     background: black;
     color: white;
