@@ -265,8 +265,8 @@ a.category-badge > span.badge:hover {
 }
 
 #mc_embed_signup .button {
-    background-color: #14b582;
-    height: 43px;
+    background-color: #14b582 !important;
+    height: 43px !important;
 }
 /* Product Form */
 
@@ -294,6 +294,11 @@ a.category-badge > span.badge:hover {
     background-color: #dc3545;
     border-color: #dc3545;
     border-radius: 0;
+}
+
+.wishlist-img > a > img{
+    height: 80px;
+    width: 70px;
 }
 
 /* FOOTER */

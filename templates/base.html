@@ -8,6 +8,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description"
+        content="Joko Gaming is an online retailer selling premium gaming products for everyone to use | Free Shipping on orders over $50!">
+    <meta name="keywords"
+        content="gaming products, buy gaming keboards online, gaming mouse, gaming headset, premium gaming accessories, professional gaming equipment">
     {% endblock %}
 
     {% block extra_meta %}
@@ -71,7 +75,7 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="{% url 'admin_profile' %}" class="dropdown-item">Product Management</a>
+                                    <a href="{% url 'admin_profile' %}" class="dropdown-item">Admin Profile</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'wishlist' %}" class="dropdown-item">Wishlist</a>

@@ -6,6 +6,7 @@
 .product-details-img{
     max-width: 500px;
     max-height: 550px;
+    object-fit: contain;
 }
 .description-text{
     line-height: 27px;
