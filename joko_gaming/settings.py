@@ -82,7 +82,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -127,7 +127,7 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-else:    
+else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -135,11 +135,11 @@ else:
         }
     }
 
-#DATABASES = {
-#    'default': dj_database_url.parse('postgres://gnicorjfzrkfit:5a664c877665462a3524c7b3c6b60225dc065a0d92922fcc037959895f872322@ec2-54-170-90-26.eu-west-1.compute.amazonaws.com:5432/da1q55e309ed9g')
-#}
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-joachimnorde-jokogaming-jpalkt9vd3o.ws-eu63.gitpod.io','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-joachimnorde-jokogaming-jpalkt9vd3o.ws-eu63.gitpod.io',
+    'https://*.127.0.0.1'
+    ]
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -156,7 +156,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator', # noqa
-    }, 
+    },
 ]
 
 
@@ -189,7 +189,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'joko-gaming'
     AWS_S3_REGION_NAME = 'eu-north-1'
@@ -197,7 +197,7 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-    #Static and media files
+    # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'

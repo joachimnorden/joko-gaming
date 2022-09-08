@@ -105,4 +105,4 @@ def privacy_page(request):
 
     template = 'faq/privacy_policy.html'
 
-    return render(request, template)    
+    return render(request, template)

@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Product, Category, Review
 
+
 class ProductAdmin(admin.ModelAdmin):
     """ product model display """
     list_display = (
@@ -42,4 +43,3 @@ class ReviewAdmin(admin.ModelAdmin):
 admin.site.register(Review, ReviewAdmin)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
-
