@@ -196,61 +196,6 @@ a.category-badge > span.badge:hover {
     font-size:16px;
 }
 
-  .nav-link,
-  .nav-link > a,
-  footer h6,
-  .logo-font {
-      font-family: 'Roboto', sans-serif;
- }
-  .update-link,
-  .delete-item{
-      cursor: pointer;
- }
- /* NAVBAR */
-.dropdown-menu{
-    background-color: whitesmoke;
-    border: 1px solid rgb(228, 226, 226) 
- }
-.navbar-brand {
-    color: #111;
-    font-weight: 600;
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 1px;
- }
-.navbar-brand:hover{
-    color: #14b582;
- }
-.navbar-collapse {
-    width: 100%;
-    padding-bottom: 5%;
-    padding-top: 2%;
- }
-.nav-bar-links{
-    display: flex;
-    flex-basis: auto;
-    width: 100%;
- }
-.nav-link, .nav-link > a,
-.dropdown-menu > a{
-    color: black ;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    padding-top: 8px;
- }
-.nav-link:hover{
-    color: rgb(59, 59, 59);
- }  
-.navbar-toggler-icon > i {
-    color: black;
-    font-size: 2.3rem;
-}
-.dropdown-toggle::after {
-    content: none;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem!important;
-    letter-spacing: 1px;
-}
 
 /* Allauth form formatting */
 
@@ -309,10 +254,7 @@ a.category-badge > span.badge:hover {
 /* MailChimp style */
 
 #mc_embed_signup {
-    background:#fff; 
-    clear:left; 
-    font:14px Helvetica,Arial,sans-serif;  
-    width:600px;
+    background:#fff;
 }
 
 /* Product Form */
