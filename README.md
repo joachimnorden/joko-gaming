@@ -4,39 +4,32 @@ You can find live site [here](https://joko-gaming.herokuapp.com/)
 
 # Table of Contents 
 1. [UX](#ux)
-    - [Strategy](#strategy)
-    - [User Stories](#user-stories)
+
+   - [Strategy](#strategy)
+   - [User Stories](#user-stories)
 
 2. [Scope](#scope)
-    - [Features](#features)
-    - [Future Features](#future-features)
+
+   - [Features](#features)
+   - [Future Features](#future-features)
 
 3. [Structure](#structure)
-    - [Wireframes](#wireframes)
-    - [Database schema](#database-schema)
-    - [Models](#models)
 
-4. [Web marketing](#web-marketing)
-    - [Newsletter](#newsletter)
-    - [Facebook](#facebook)
-    - [SEO](#seo)
+   - [Sitemap](#sitemap)
+   - [Wireframes](#wireframes)
+   - [Database schema](#database-schema)
+   - [Business Model](#business-model)
+   - [Marketing](#marketing)
 
-5. [Design](#design)
+4. [Surface](#surface)
 
-6. [Technologies Used](#technologies-used)
+5. [Technologies Used](#technologies-used)
 
-7. [Code validation](#code-validation)
+6. [Testing](#testing)
 
-8. [Testing](#testing)
+7. [Deployment](#deployment)
 
-9. [Bugs](#bugs)
-
-10. [Deployment](#deployment)
-
-11. [Credits](#credits)
-
-
-responsive image and link to live site
+8. [Credits](#credits)
 
 
 # About
@@ -96,7 +89,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 | 19 | As a **shopper** I want to be able to **adjust the quantity of individual items in my bag** so that I can **easily make changes to my purchase before checkout**             |
 | 20 | As a **shopper** I want to be able to **easily enter my payment information** so that I can **checkout quickly and with no hassles**                                         |
 | 21 | As a **shopper** I want to be able to **view an order confirmation after checkout** so that I can **verify that I haven't made any mistakes**                                |
-| 22 | As a **shopper** I want to be able to **recieve an email confirmation after checking** so that I can **keep the confirmation of what I've purchased for my records**        |
+| 22 | As a **shopper** I want to be able to **recieve an email confirmation after checking out** so that I can **keep the confirmation of what I've purchased for my records**        |
 
 **Epic: User Interaction**
 
@@ -361,6 +354,10 @@ The aim was to provide a solid colour base which could bring the other elements 
 [Pillow](https://pillow.readthedocs.io/en/stable/) - This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.
 
 [Stripe](https://stripe.com/docs) - was used to make and process payments
+
+# Testing 
+
+Testing and results can be found [here](TESTING.md).
 
 ## Deployment
 

@@ -89,7 +89,7 @@ Due to lack of time, it remained unresolved.
 ### Add Product
 
 <p align="center">
-<img src="assets/documents/README_docs/validators/add-book-validator.png" width="100%" height="100%">
+<img src="assets/documents/readme_docs/testing_docs/wc3-html-add-product.jpg" width="100%" height="100%">
 </p>
 
 
@@ -273,3 +273,7 @@ Due to lack of time, it remained unresolved.
 
 32. As a user I want to be able to have a personalized user profile so that I can view my personal order history and order confirmations and save my payment information
     - A user can reach their personal profile from the navigation with order history and able to save payment information.
+
+
+# Responsivness
+The page is fully responsive and all user stories works in both mobile and desktop
