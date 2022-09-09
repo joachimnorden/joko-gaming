@@ -219,8 +219,6 @@ def add_category(request):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    categories = Category().objects.all()
-
     if request.method == 'POST':
         form = CategoryForm(request.POST)
 
@@ -237,7 +235,6 @@ def add_category(request):
     template = 'products/add_category.html'
     context = {
         'form': form,
-        'categories': categories,
         'on_page': True,
     }
     return render(request, template, context)

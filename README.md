@@ -253,13 +253,13 @@ This is an e-commerce store with a B2C (Business to Consumer) model, as the busi
 - The facebook link takes you to the Joko Gaming business page which can be found [here](https://www.facebook.com/Joko-Gaming-104812362377260/).
 
 <p align="center">
-<img src="assets/documents/README_docs/joko-gaming-facebook-page.jpg" width="1000" height="100%">
+<img src="assets/documents/readme_docs/joko-gaming-facebook-page.jpg" width="1000" height="100%">
 </p>
 
 - The newsletter sign up form can also be found in the footer
 
 <p align="center">
-<img src="assets/documents/README_docs/newsletter-signup-form.jpg" width="1000" height="100%">
+<img src="assets/documents/readme_docs/newsletter-signup-form.jpg" width="1000" height="100%">
 </p>
 
 # Search Engine Optimisation
@@ -284,7 +284,7 @@ Color pallet from [Colors](https://coolors.co/139035-696969-ffd700-d7b500-252525
 - #555555 - used as font color
 
 <p align="center">
-<img src="assets/documents/README_docs/Colors.jpg" width="1000" height="100%">
+<img src="assets/documents/readme_docs/Colors.jpg" width="1000" height="100%">
 </p>
 
 The aim was to provide a solid colour base which could bring the other elements on the site to life.
