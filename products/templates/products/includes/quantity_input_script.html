@@ -2,11 +2,11 @@
 
  /* 
     * Disable +/- buttons outside 1-99 range.
-    * If no size is passed to the function, the parameter will have a value of undefined by default,
+    * If no color is passed to the function, the parameter will have a value of undefined by default,
     * which prevents any errors 
     */
     function handleEnableDisable(itemId, color) {
-        if (size) {
+        if (color) {
             var currentValue = parseInt($(`.color_${itemId}_${color}`).val());
         } else {
             var currentValue = parseInt($(`.id_qty_${itemId}`).val());
@@ -15,7 +15,7 @@
         var minusDisabled = currentValue < 2;
         var plusDisabled = currentValue > 98;
 
-        if (size) {
+        if (color) {
             $(`.decrement-color_${itemId}_${color}`).prop('disabled', minusDisabled);
             $(`.increment-color_${itemId}_${color}`).prop('disabled', plusDisabled);
         } else {
