@@ -192,6 +192,11 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+.bag-img {
+    height: 170px;
+    width: 170px;
+}
+
 .card {
     border:none;
 }

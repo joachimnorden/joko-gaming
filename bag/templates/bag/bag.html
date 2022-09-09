@@ -52,8 +52,6 @@
                             </div>
                             <div class="col-12 col-sm-6">
                                 {% include 'bag/includes/quantity-form.html' %}
-                                <a class="update-link text-info"><small>Update</small></a>
-                                <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_color="{{ item.color }}"><small>Remove</small></a>
                             </div>
                         </div>
                         <div class="row">
@@ -91,8 +89,6 @@
                                     </td>
                                     <td class="py-3 w-25">
                                         {% include 'bag/includes/quantity-form.html' %}
-                                        <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="delete-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_color="{{ item.color }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.sort_price | calc_subtotal:item.quantity }}</p>
