@@ -195,6 +195,7 @@ a.category-badge > span.badge:hover {
 .bag-img {
     height: 170px;
     width: 170px;
+    object-fit: contain;
 }
 
 .card {
