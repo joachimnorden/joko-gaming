@@ -321,6 +321,7 @@ footer h6{
 }
 .footer-link{
     color: white;
+    display: block;
 }
 .footer-link:hover{
     color: #14b582;
