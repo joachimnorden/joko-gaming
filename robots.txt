@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /checkout/
+Disallow: /profiles/
+Disallow: /products/add_product/
+Disallow: /products/add_product/
+Sitemap: https://joko-gaming.herokuapp.com/sitemap.xml
