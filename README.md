@@ -204,7 +204,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 - Wishlist displays the list of items the user has saved to their wishlist, with the ability to remove the product from the list
 
 <p align="center">
-<img src="assets/documents/readme_docs/joko-gaming-user-account.jpg" width="1000" height="100%">
+<img src="assets/documents/readme_docs/joko-gaming-user-account.jpg" width="400" height="100%">
 </p>
 
 ### **Admin**
@@ -244,7 +244,7 @@ The website is made from 7 apps:
 ## Sitemap
 
 <p align="center">
-<img src="assets/documents/README_docs/visual-sitemap-joko-gaming.jpg" width="1000" height="100%">
+<img src="assets/documents/readme_docs/visual-sitemap-joko-gaming.jpg" width="1000" height="100%">
 </p>
 
 ## Wireframes
