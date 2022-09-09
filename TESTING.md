@@ -46,7 +46,7 @@
 
 ## Shopping Bag
 
-Unsolved bug! "Error: Duplicate ID delete_3." error acurres due to two delete buttons with the same ID.
+Unsolved bug! "Error: Duplicate ID delete_3." error ocurrs due to two delete buttons with the same ID.
 Due to lack of time, it remained unresolved.
 
 <p align="center">
@@ -57,7 +57,7 @@ Due to lack of time, it remained unresolved.
 ## Checkout Page
 
 <p align="center">
-<img src="image.png" width="100%" height="100%">
+<img src="assets/documents/readme_docs/testing_docs/wc3-html-checkout.jpg" width="100%" height="100%">
 </p>
 
 
@@ -133,26 +133,26 @@ Due to lack of time, it remained unresolved.
 # JSHINT 
 - All JS was passed through Jshint
 
-## Base
-<p align="center">
-<img src="assets/documents/README_docs/validators/base.js-validator.png" width="800" height="100%">
-</p>
 
 ## Checkout 
 <p align="center">
-<img src="assets/documents/README_docs/validators/checkout.js-validator.png" width="800" height="100%">
+<img src="assets/documents/readme_docs/testing_docs/jshint-checkout.jpg" width="800" height="100%">
 </p>
 
 ## Shopping Bag quantity buttons
 
+Unsolved bug! "...used out of scope" and "...is already defined "error ocurrs.
+Tried to fix a few times and could solve the JShint error but the function didn't work. 
+Due to lack of time, it remained unresolved.
+
 <p align="center">
-<img src="assets/documents/README_docs/validators/quantity-buttons-validator.png" width="800" height="100%">
+<img src="assets/documents/readme_docs/testing_docs/jshint-bag.jpg" width="800" height="100%">
 </p>
 
 ## Shopping Bag
 
 <p align="center">
-<img src="assets/documents/README_docs/validators/shopping-bag.js-validator.png" width="800" height="100%">
+<img src="assets/documents/readme_docs/testing_docs/jshint-bag.jpg" width="800" height="100%">
 </p>
 
 # PEP8
