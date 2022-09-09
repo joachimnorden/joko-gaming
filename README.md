@@ -1,3 +1,6 @@
+<h1 align="center">Joko Gaming</h1>
+
+You can find live site [here](https://joko-gaming.herokuapp.com/)
 
 # Table of Contents 
 1. [UX](#ux)
@@ -123,7 +126,7 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 *Navigation bar:*
 - The navigation bar appears on every page so users can easily navigate through the site
-- Navigation bar has links for 'Products', 'Categories' and 'sales' and icons for search bar, account and shopping bag
+- Navigation bar has links for 'Products', 'Categories' and 'special offers' a search bar and icons for account and shopping bag
 
 *Account - Login/Register:*
 - The Login/Register feature is located in the upper right corner and offers the user to log in or register for an account as well as log out of the site
@@ -139,17 +142,16 @@ This website will offer all of these things whilst also allowing for intuitive n
 - A 'Shop Now' button for fast access to the products
 
 *Testimonials*
-- A carousel with testimonials from industry professionals and customers
+- A testimonials sections having comments and recommendations from industry professionals and customers
 
 *Footer:*
-- Appears on every page with links to social media, FAQ's, shipping info and privacy policy
+- Appears on every page with links to social media, newsletter sign up form, FAQ's, shipping info and privacy policy
 - Social media links are opened in a new tab to avoid dragging users from the site
 
 ### **Products**
 
 - The products page shows all products available for purchase
 - Each product has an image, title, rating and price
-- The site will paginate all products display 10 at a time
 - Each product card will take a user to the product details page 
 
 
@@ -157,40 +159,71 @@ This website will offer all of these things whilst also allowing for intuitive n
 
 - Categories dropdown from navbar, allowing the user to access specific categories
 - Categories: 
-    - Headsets
-    - Mouses
-    - Keyboards
+    - Headset
+    - Mouse
+    - Keyboard
     - Other
 
-### **Sales**
+### **Special Offers**
 
-- Fast access to see products with a discount.
+- Special Offers dropdown from Navbar, allowing the user to access specific offer
+- From the dropdown menu user can select :
+    - Sale
+    - New arrivals
 
 ### **Product Details Page**
 - The Product Details Page displays all the information about the selected product
 - Product info will be image, title, rating, category and description
-- Users will be able to add product to the shopping bag or whishlist aswell as change quantity.
+- Users will be able to add product to the shopping bag or whishlist aswell as change quantity and colors if available.
 - A Commenting section is located at the bottom available to all. Logged in users can also leave a comment
 
 ### **Checkout Page**
 - The checkout page is accessible through the shopping bag
 - A user can enter and save their personal details, see a summary of what's in the shopping bag and enter their card credentials to finish the purchase.
 
-### **Admin User**
-- Admin user can preform full CRUD functionalliy without having to enter the default 'admin panel' from django. 
-- Admin user can add products from a 'Product Management' link in the account menu from the navigation bar 
-- Admin user can edit/delete products from the products page and product details page
+### **User Profile**
+
+- A logged-in user can access Profile page, Wishlist and Change Password from the navbar
+- The profile page is where the user can update their default shipping/billing address and see order history
+- Wishlist displays the list of items the user has saved to their wishlist, with the ability to remove the product from the list
+
+### **Admin**
+
+- Admin can preform full CRUD functionalliy without having to enter the default 'admin panel' from django
+- Admin can add products from 'Product Managment' link in the account menu from the navigation bar
+- Admin can add category from 'Product Managment' link
+- Admin can add FAQ's from 'FAQ's' link
+- Admin can edit/delete products from products page and products details page
+- Admin can edit/delete category from 'Category Management' link
+- Admin can edit/delete FAQ from 'FAQ Management' and FAQ's page, mark them as published or draft
 
 
 ## Future Features
 
-- Subscribe to gaming guides and tutorials
+- Add a subscribtion model to gaming guides and tutorials
+- Add product image carousel on product detail page
 
 
 # Structure
 
+Simplicity helps users to quickly and easily access the app and navigate within the app.
+
+The website is made from 7 apps:
+
+- Products
+- Checkout
+- Home
+- Profiles
+- Faq
+- Bag
+- Wishlist
+
+
 ## Sitemap
 
+<p align="center">
+<img src="assets/documents/README_docs/visual-sitemap-joko-gaming.jpg" width="1000" height="100%">
+</p>
 
 ## Wireframes
 
