@@ -12,10 +12,9 @@
                 Categories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="categories-link">
-                <a href="{% url 'products' %}?category=headset" class="dropdown-item">Headset</a>
-                <a href="{% url 'products' %}?category=mouse" class="dropdown-item">Mouse</a>
-                <a href="{% url 'products' %}?category=keyboards" class="dropdown-item">Keyboard</a>
-                <a href="{% url 'products' %}?category=other" class="dropdown-item">Other</a>
+                {% for category in categories %}
+                <a class="dropdown-item" href="{% url 'products' %}?category={{ category.name }}">{{ category.friendly_name }}</a>
+                {% endfor %}
             </div>
         </li>
 

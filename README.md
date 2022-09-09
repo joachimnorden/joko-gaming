@@ -148,11 +148,19 @@ This website will offer all of these things whilst also allowing for intuitive n
 - Appears on every page with links to social media, newsletter sign up form, FAQ's, shipping info and privacy policy
 - Social media links are opened in a new tab to avoid dragging users from the site
 
+<p align="center">
+<img src="assets/documents/readme_docs/joko-gaming-startpage.jpg" width="1000" height="100%">
+</p>
+
 ### **Products**
 
 - The products page shows all products available for purchase
 - Each product has an image, title, rating and price
 - Each product card will take a user to the product details page 
+
+<p align="center">
+<img src="assets/documents/readme_docs/joko-gaming-products.jpg" width="1000" height="100%">
+</p>
 
 
 ### **Categories**
@@ -177,15 +185,27 @@ This website will offer all of these things whilst also allowing for intuitive n
 - Users will be able to add product to the shopping bag or whishlist aswell as change quantity and colors if available.
 - A Commenting section is located at the bottom available to all. Logged in users can also leave a comment
 
+<p align="center">
+<img src="assets/documents/readme_docs/joko-gaming-pdv.jpg" width="1000" height="100%">
+</p>
+
 ### **Checkout Page**
 - The checkout page is accessible through the shopping bag
 - A user can enter and save their personal details, see a summary of what's in the shopping bag and enter their card credentials to finish the purchase.
+
+<p align="center">
+<img src="assets/documents/readme_docs/joko-gaming-checkout.jpg" width="1000" height="100%">
+</p>
 
 ### **User Profile**
 
 - A logged-in user can access Profile page, Wishlist and Change Password from the navbar
 - The profile page is where the user can update their default shipping/billing address and see order history
 - Wishlist displays the list of items the user has saved to their wishlist, with the ability to remove the product from the list
+
+<p align="center">
+<img src="assets/documents/readme_docs/joko-gaming-user-account.jpg" width="1000" height="100%">
+</p>
 
 ### **Admin**
 
@@ -194,9 +214,11 @@ This website will offer all of these things whilst also allowing for intuitive n
 - Admin can add category from 'Product Managment' link
 - Admin can add FAQ's from 'FAQ's' link
 - Admin can edit/delete products from products page and products details page
-- Admin can edit/delete category from 'Category Management' link
 - Admin can edit/delete FAQ from 'FAQ Management' and FAQ's page, mark them as published or draft
 
+<p align="center">
+<img src="assets/documents/readme_docs/joko-gaming-admin-panel.jpg" width="1000" height="100%">
+</p>
 
 ## Future Features
 
@@ -668,4 +690,4 @@ All images were taken from [Pexels](https://www.pexels.com/)
 ## Acknowledgements
 
 - Big thanks to everybody from the Code Institute Slack community 
-- Thank you Daniel Callaghan for your great help in solving the sort price bug
+- Big thanks to my friends and family for supporting me
