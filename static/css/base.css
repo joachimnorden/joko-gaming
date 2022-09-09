@@ -309,7 +309,7 @@ a.category-badge > span.badge:hover {
 /* FOOTER */
 footer{
     background-color: rgb(15, 15, 15); /* This is for ie8 and below */
-    background-color: rgba(15, 15, 16, 0.8);
+    background-color: rgba(15, 15, 15, 0.9);
 }
 footer h6{
     color: white;
