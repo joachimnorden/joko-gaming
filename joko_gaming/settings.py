@@ -87,6 +87,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
+                'home.contexts.product_categories',
                 'wishlist.contexts.wishlist_list_items',
             ],
             'builtins': [

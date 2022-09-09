@@ -225,7 +225,7 @@ def add_category(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully added category!')
-            return redirect(reverse('products'))
+            return redirect(reverse('add_category'))
         else:
             messages.error(
                 request, 'Failed to add category.\
