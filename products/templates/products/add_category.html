@@ -51,12 +51,12 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {% for c in category %}
+                            {% for category in categories %}
                             <tr>
                                 <td>
-                                    <p> {{c.name}}</p>
+                                    <p> {{category.name}}</p>
                                 </td>
-                                <td>{{c.friendly_name}}</td>
+                                <td>{{category.friendly_name}}</td>
                                 <td>
                                     <div class="btn logo-font d-inline">
     
